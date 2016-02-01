@@ -58,6 +58,7 @@ int main1(int argc, char **argv) {
   if (argc != 2) THROW("give text file as an argument");
   const char *fname = argv[1];
 
+  // If the process of train is end, you can set the train file's path here.
   string load_name = getsenv("load", "");
   if (load_name == "") THROW("must give load= parameter");
   CLSTMOCR clstm;
