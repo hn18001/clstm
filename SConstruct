@@ -86,6 +86,9 @@ if option("eigen", "") == "":
 else:
     inc = findonpath("Eigen/Eigen", [option("eigen")])
 
+# Set the Eigen's path, if install Eigen following the instructions of the software, there's errors!
+inc = "/Users/heneng/GitHub/tensorflow/third_party/eigen3"
+
 env.Append(CPPPATH=[inc])
 env.Append(LIBS=["png", "protobuf"])
 
