@@ -7,6 +7,7 @@
 #include "clstm.h"
 #include "extras.h"
 #include "utils.h"
+#include <unistd.h>
 
 using std_string = std::string;
 #define string std_string
