@@ -33,6 +33,8 @@ extern "C" {
 #include "multidim.h"
 #include "pymulti.h"
 #include "extras.h"
+#include <unistd.h>
+extern char **environ;
 
 namespace ocropus {
 using namespace multidim;
